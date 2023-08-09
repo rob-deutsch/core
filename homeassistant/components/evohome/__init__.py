@@ -690,9 +690,9 @@ class EvoChild(EvoDevice):
 
     async def async_update(self) -> None:
         """Get the latest state data."""
-        next_sp_from = self._setpoints.get("next_sp_from", "2000-01-01T00:00:00+00:00")
-        next_sp_from_dt = dt_util.parse_datetime(next_sp_from)
-        if next_sp_from_dt is None or dt_util.now() >= next_sp_from_dt:
-            await self._update_schedule()  # no schedule, or it's out-of-date
+        # next_sp_from = self._setpoints.get("next_sp_from", "2000-01-01T00:00:00+00:00")
+        # next_sp_from_dt = dt_util.parse_datetime(next_sp_from)
+        # if next_sp_from_dt is None or dt_util.now() >= next_sp_from_dt:
+        #     await self._update_schedule()  # no schedule, or it's out-of-date
 
         self._device_state_attrs = {"setpoints": self.setpoints}

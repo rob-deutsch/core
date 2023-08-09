@@ -13,6 +13,9 @@ EVO_DAYOFF = "DayOff"
 EVO_CUSTOM = "Custom"
 EVO_HEATOFF = "HeatingOff"
 
+EVO_OFF = "Off"
+EVO_HEAT = "Heat"
+
 # The Children's operating mode is one of:
 EVO_FOLLOW = "FollowSchedule"  # the operating mode is 'inherited' from the TCS
 EVO_TEMPOVER = "TemporaryOverride"
